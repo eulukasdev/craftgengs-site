@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adicionar Servidor - CraftGengs</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(0,0,0,0.45);
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 30px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.server-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.code {
+  background: #111;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+button {
+  background: #00c853;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00e676;
+}
+
+.step {
+  margin-bottom: 25px;
+}
+
+.step img {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+.notice {
+  background: #1b1b1b;
+  border-left: 5px solid #ff9800;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.footer {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 14px;
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎮 Como entrar no servidor CraftGengs</h1>
+<p style="text-align:center;">
+O Minecraft não permite adicionar servidores automaticamente.<br>
+Siga o passo a passo abaixo conforme sua versão.
+</p>
+
+<div class="card">
+  <h2>🌐 Dados do Servidor</h2>
+  <div class="server-box">
+    <div class="code">IP: teste.blazebr.com</div>
+    <button onclick="copyText('teste.blazebr.com')">📋 Copiar IP</button>
+
+    <div class="code">Porta: 19132</div>
+    <button onclick="copyText('19132')">📋 Copiar Porta</button>
+  </div>
+</div>
+
+<!-- JAVA -->
+<div class="card">
+  <h2>☕ Minecraft Java Edition (PC)</h2>
+
+  <div class="step">
+    <strong>1️⃣ Abra o Minecraft Java Edition</strong>
+    <img src="https://i.imgur.com/1ZQZ1ZL.png" alt="Abrir Minecraft Java">
+  </div>
+
+  <div class="step">
+    <strong>2️⃣ Clique em “Multiplayer”</strong>
+    <img src="https://i.imgur.com/8XKZKXr.png" alt="Menu Multiplayer Java">
+  </div>
+
+  <div class="step">
+    <strong>3️⃣ Clique em “Adicionar Servidor”</strong>
+    <img src="https://i.imgur.com/3u9WcU6.png" alt="Adicionar Servidor Java">
+  </div>
+
+  <div class="step">
+    <strong>4️⃣ Preencha os dados do servidor</strong>
+    <ul>
+      <li><b>Nome:</b> CraftGengs</li>
+      <li><b>Endereço:</b> teste.blazebr.com</li>
+    </ul>
+    <img src="https://i.imgur.com/Q7J1H9J.png" alt="Preencher dados Java">
+  </div>
+
+  <div class="step">
+    <strong>5️⃣ Salve e clique em Entrar</strong>
+  </div>
+</div>
+
+<!-- BEDROCK -->
+<div class="card">
+  <h2>📱 Minecraft Bedrock (Celular / Console)</h2>
+
+  <div class="step">
+    <strong>1️⃣ Abra o Minecraft Bedrock Edition</strong>
+    <img src="https://i.imgur.com/9bXvYcP.png" alt="Abrir Minecraft Bedrock">
+  </div>
+
+  <div class="step">
+    <strong>2️⃣ Vá em “Jogar” → “Servidores”</strong>
+    <img src="https://i.imgur.com/J3N4s9D.png" alt="Menu Servidores Bedrock">
+  </div>
+
+  <div class="step">
+    <strong>3️⃣ Clique em “Adicionar Servidor”</strong>
+    <img src="https://i.imgur.com/W9FJ0yT.png" alt="Adicionar servidor Bedrock">
+  </div>
+
+  <div class="step">
+    <strong>4️⃣ Preencha corretamente</strong>
+    <ul>
+      <li><b>Nome do Servidor:</b> CraftGengs</li>
+      <li><b>Endereço:</b> teste.blazebr.com</li>
+      <li><b>Porta:</b> 19132</li>
+    </ul>
+    <img src="https://i.imgur.com/0KXQJpL.png" alt="Preencher dados Bedrock">
+  </div>
+
+  <div class="step">
+    <strong>5️⃣ Salve e conecte no servidor</strong>
+  </div>
+
+  <div class="notice">
+    ⚠️ Se não conseguir entrar, verifique se copiou corretamente o IP e a porta.
+  </div>
+</div>
+
+<div class="footer">
+© CraftGengs • Tutorial oficial de conexão
+</div>
+
+</div>
+
+<script>
+function copyText(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Copiado: " + text);
+  });
+}
+</script>
+
+</body>
+</html>
